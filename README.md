@@ -73,19 +73,9 @@ Please ensure the following tools and libraries are installed and configured on 
 
 1.  **Install Dependencies:** Set up Java, Zookeeper, Storm, and OpenCV as per the **Requirements** section.
 2.  **Clone the Repository:**
-    ```bash
-    git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
-    ```
-3.  **Prepare the Environment:**
-    * Ensure your native OpenCV library path is accessible to the Java application.
-    * Place your input video file in the `video/` directory (default input is `1.mp4`).
-4.  **Run the Topology:**
+3.  **Run the Topology:**
     * Navigate to the `src` folder.
     * Compile and run the **`start`** class.This class acts as the main entry point; it orchestrates the frame extraction, topology submission, video reconstruction, and brightness analysis.
-    ```bash
-    javac -cp ".:/path/to/storm/*:/path/to/opencv/jar" VideoCap/start.java
-    java -Djava.library.path="/path/to/opencv/lib" -cp ".:/path/to/storm/*:/path/to/opencv/jar" VideoCap.start
-    ```
 5.  **Check Output:**
     * **Video:** The final video will be generated as `output_video.mp4`.
     * **Stats:** Check `FRAME_AVG.txt` and `FINAL_AVG.txt` for brightness analysis.
