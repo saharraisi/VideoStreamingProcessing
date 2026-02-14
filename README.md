@@ -1,4 +1,3 @@
-# VideoStreamingProcessing
 # Distributed Video Stream Processing with Apache Storm
 
 ## Overview
